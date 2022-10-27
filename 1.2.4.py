@@ -2,10 +2,11 @@
 # 6,78 -> 7
 # 5 -> no
 
-from tokenize import Double
-
-
-a = Double(input('Введите дробное число'))
-
-n = a % 10
-print(n)
+try:
+    a = float(input('Введите дробное число: '))
+    if (a%1!=0):
+        print(int(a*10)%10)
+    else:
+        print('нет')
+except:
+    print('Введено некорректное число!')
