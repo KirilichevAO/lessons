@@ -5,4 +5,4 @@ n = int(input('Введите число: '))
 book = {}
 for i in range(n):
     book[i+1] = (i+1)*3+1
-    print(book)
+print(book)
