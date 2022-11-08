@@ -4,8 +4,9 @@
 
 a = str(input('Введите предложение: '))
 b = str(input('Введите слово: '))
-count = 0
-for i in a:
-    if i == b:
-        count = count + 1
-print(str(count))
+results = 0
+sub_len = len(b)
+for i in range(len(a)):
+    if a[i:i+sub_len] == b:
+        results += 1
+print(results)
