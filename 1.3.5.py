@@ -8,7 +8,7 @@ try:
     for i in range(n):
         i = i + 1
         x = i * x
-    
-        print(x, end = " ")
+
+        print(x, end=" ")
 except:
     print('Введено некорректное значение!')

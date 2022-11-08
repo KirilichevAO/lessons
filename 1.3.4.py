@@ -7,7 +7,7 @@
 try:
     n = int(input('Введите целое число: '))
     x = 0
-    while(n > 0):
+    while (n > 0):
         y = n % 10
         x = x + y
         n = n//10
