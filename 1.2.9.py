@@ -19,4 +19,7 @@ for x in book.values():
 
 for x in book.keys():
     print(x)
-    
+
+# моржовый оператор :=
+while x:=int(input('--> ')) < 0:
+    print('Введи число больше нуля')

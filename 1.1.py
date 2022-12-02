@@ -132,6 +132,11 @@
 # for i in list:
 #     print(i)
 
+# range(start, stop, step)
+# range(5) -> [0, 1, 2, 3, 4]
+# range(2, 5) -> [2, 3, 4]
+# range(1, 7, 2) -> [1, 3, 5]
+
 # r = range(10)
 # for i in r:
 #     print(i)

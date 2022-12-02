@@ -2,11 +2,23 @@
 # 6,78 -> 7
 # 5 -> no
 
-try:
-    a = float(input('Введите дробное число: '))
-    if (a%1!=0):
-        print(int(a*10)%10)
-    else:
-        print('нет')
-except:
-    print('Введено некорректное число!')
+# try:
+#     a = float(input('Введите дробное число: '))
+#     if (a%1!=0):
+#         print(int(a*10)%10)
+#     else:
+#         print('нет')
+# except:
+#     print('Введено некорректное число!')
+
+# # доп решение
+# num_z = float(input('Введите число: '))
+# if int(num_z*10 % 10) > 0:
+#     print(int(num_z * 10 % 10))
+# else:
+#     print('no')
+
+# доп решение
+# '6,78' -> ['6', '78'] -> '78' -> '7'
+n = input('Input number: ')
+print(n.split(',')[1][0])

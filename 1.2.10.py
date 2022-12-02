@@ -11,9 +11,19 @@
 # except:
 #     print('Введено некорректное значение!')
 
-try:
-    N = int(input('Введите число: '))
-    for i in range(N):
-        print(((-3)**i), end = " ")
-except:
-    print('Введено некорректное значение!')
+# другое решение
+# try:
+#     N = int(input('Введите число: '))
+#     for i in range(N):
+#         print(((-3)**i), end = " ")
+# except:
+#     print('Введено некорректное значение!')
+
+# другое решение
+n = int(input('Введите N - '))
+i=0
+while i < n:
+    print( (-3)**i , end=" ")
+    i += 1
+else:
+    print ('')
