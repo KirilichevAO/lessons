@@ -9,7 +9,7 @@ def posl(a):
 try:
     sp = []
     for i in range(n := (int(input('Введите число: ')))):
-        sp.append((1+1/n)**n)
+        sp.append(posl(i+1))
     summ = sum(sp)
     print(round(summ, 2))
 except:
