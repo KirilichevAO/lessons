@@ -6,24 +6,24 @@
 # -3 * -1 * 0 = 0
 # Вывод: 0
 
-# try:
-#     list = []
-#     n = int(input('Введите число: '))
+try:
+    list = []
+    n = int(input('Введите число: '))
 
-#     for i in range(-n, n+1):
-#         list.append(i)
+    for i in range(-n, n+1):
+        list.append(i)
 
-#     a = int(input('Введите 1-й индекс: '))
-#     b = int(input('Введите 2-й индекс: '))
-#     c = int(input('Введите 3-й индекс: '))
+    a = int(input('Введите 1-й индекс: '))
+    b = int(input('Введите 2-й индекс: '))
+    c = int(input('Введите 3-й индекс: '))
 
-#     print(list)
-#     print(f'Произведение элементов = {list[a] * list[b] * list[c]}')
-# except:
-#     print('Введено некорректное значение!')
+    print(list)
+    print(f'Произведение элементов = {list[a] * list[b] * list[c]}')
+except:
+    print('Введено некорректное значение!')
 
 
 
-n = 9
-while k:=len(input('-->').split()) != n:
-    print('Пробуй ещё раз')
+# n = 9
+# while k:=len(input('-->').split()) != n:
+#     print('Пробуй ещё раз')
