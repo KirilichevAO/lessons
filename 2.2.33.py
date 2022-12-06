@@ -15,8 +15,7 @@ def fun():
         if list[k] == a:
             count += 1
             if count == 2:
-                return k
-    return ()
+                print(k)
 
 
 fun()

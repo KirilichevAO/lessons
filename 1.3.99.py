@@ -8,22 +8,17 @@
 
 try:
     list = []
-    n = int(input('Введите число: '))
+    n = int(input('Введите колличество элементов в основном списке: '))
 
     for i in range(-n, n+1):
         list.append(i)
 
-    a = int(input('Введите 1-й индекс: '))
-    b = int(input('Введите 2-й индекс: '))
-    c = int(input('Введите 3-й индекс: '))
+    list_i = []
+    for k in range(0, indx := int(input('Введите колличество элементов в дополнительном списке: '))):
+        list_i.append(int(input('Введите номер индекса: ')))
 
+    print(list_i)
     print(list)
-    print(f'Произведение элементов = {list[a] * list[b] * list[c]}')
+    print(f'Произведение элементов = {list[list_i[0]] * list[list_i[1]] * list[list_i[2]]}')
 except:
     print('Введено некорректное значение!')
-
-
-
-# n = 9
-# while k:=len(input('-->').split()) != n:
-#     print('Пробуй ещё раз')

@@ -2,9 +2,11 @@
 # Пример:
 # [2, 3, 5, 9, 3] -> на нечётных идексах элементы 3 и 9, ответ: 12
 
-list = [2, 3, 5, 9, 3]
+list = []
+for i in range(0, len_list := int(input('Введите колличество элементов: '))):
+    list.append(int(input('Введите значение элемента: ')))
 summ = 0
-for i in range(len(list)):
-    if i % 2 == 1:
-        summ = summ + list[i]
+for k in range(len(list)):
+    if k % 2 == 1:
+        summ = summ + list[k]
 print(f'{list} -> сума элементов на нечетных позициях: {summ}')
