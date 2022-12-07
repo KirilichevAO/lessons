@@ -2,13 +2,34 @@
 
 # a – открытие для добавления данных
 # r – открытие для чтения данных
-# w – открытие для записи данных
+# w – открытие для записи данных (пересоздает/создает, запись в файл)
 # w+, r+
 
 # colors = ['red', 'green', 'blue']
 # data = open('file.txt', 'a')
 # data.writelines(colors)
 # data.close()
+
+# Неправельная работа с файлами
+# f = open('file1.txt', 'w')
+# f.write('Hello, World!')
+# f.close()
+
+# # Так лучше но не идеал
+# with open('file1.txt', 'r') as f_data:
+#     print(f_data.read())
+
+# # Еще лучше но не идеал
+# file_path = 'file1.txt' # выносим в отдельную переменную путь к файлу
+# with open(file_path, 'r') as f_data:
+#     print(f_data.read())
+
+# # Идеал
+# from pathlib import Path # подключаем библиотеку которая адаптирует путь для разных ОС
+
+# file_path = Path('file1.txt') # указываем путь
+# with open(file_path, 'r') as f_data:
+#     print(f_data.read())
 ###############################################################
 
 # Другой вариант представления кода
@@ -110,33 +131,42 @@
 
 # Множества
 
-colors = {'red', 'green', 'blue'}
-print(colors) # {'red', 'green', 'blue'}
-colors.add('red')
-print(colors) # {'red', 'green', 'blue'}
-colors.add('gray')
-print(colors) # {'red', 'green', 'blue','gray'}
-colors.remove('red')
-print(colors) # {'green', 'blue','gray'}
-# colors.remove('red') # KeyError: 'red'      
-colors.discard('red')  # ok
-print(colors) # {'green', 'blue','gray'}
-colors.clear() # { }
-print(colors) # set()
+# colors = {'red', 'green', 'blue'}
+# print(colors) # {'red', 'green', 'blue'}
+# colors.add('red')
+# print(colors) # {'red', 'green', 'blue'}
+# colors.add('gray')
+# print(colors) # {'red', 'green', 'blue','gray'}
+# colors.remove('red')
+# print(colors) # {'green', 'blue','gray'}
+# # colors.remove('red') # KeyError: 'red'      
+# colors.discard('red')  # ok
+# print(colors) # {'green', 'blue','gray'}
+# colors.clear() # { }
+# print(colors) # set()
 
-a = {1, 2, 3, 5, 8}
-b = {2, 5, 8, 13, 21}
-c = a.copy() # c = {1, 2, 3, 5, 8}
-u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21}
-i = a.intersection(b) # i = {8, 2, 5}
-dl = a.difference(b) # dl = {1, 3}
-dr = b.difference(a) # dr = {13, 21}
+# a = {1, 2, 3, 5, 8}
+# b = {2, 5, 8, 13, 21}
+# c = a.copy() # c = {1, 2, 3, 5, 8}
+# u = a.union(b) # u = {1, 2, 3, 5, 8, 13, 21}
+# i = a.intersection(b) # i = {8, 2, 5}
+# dl = a.difference(b) # dl = {1, 3}
+# dr = b.difference(a) # dr = {13, 21}
 
-q=a\
-    .union(b) \
-    .difference(a.intersection(b))
-# {1, 21, 3, 13}
+# q=a\
+#     .union(b) \
+#     .difference(a.intersection(b))
+# # {1, 21, 3, 13}
+######################
+# values
+# items            !!!!!!!!!!!!!!!!!?????????? изучить!!!!!!!
+# keys
+# get
 
+# dict
+# typle
+# Марк Луц
+#######################
 
 
 

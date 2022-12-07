@@ -6,6 +6,14 @@
 # Всемогущие декораторы: https://www.youtube.com/watch?v=Va-ovLxHmus&t=2s
 # Про генераторы: https://ru.hexlet.io/courses/python-declarative-programming/lessons/generator-functions/theory_unit
 
+# Try/except: https://pythonworld.ru/tipy-dannyx-v-python/isklyucheniya-v-python-konstrukciya-try-except-dlya-obrabotki-isklyuchenij.html
+# О том, как правильно оформлять путь к файлу (базовый вариант): https://pythonworld.ru/moduli/modul-os-path.html
+# Но лучше сразу так: https://www.digitalocean.com/community/tutorials/how-to-use-the-pathlib-module-to-manipulate-filesystem-paths-in-python-3-ru
+# *По просьбе аналитиков: https://stepik.org/course/76/syllabus
+# Это материал по мат. статистике. Там есть три части этого курса.
+# Ссылка идёт на первую часть. Как её осилите, можно перейти ко второй.
+# Третья - опционально. Так же, можно сразу начать знакомиться с Jupyter notebook.
+
 # def func(a1, a2, *args, **kwargs):
 #     return a1, a2, args, kwargs
 # print(func(1, 2)) # (1, 2, (), {})
