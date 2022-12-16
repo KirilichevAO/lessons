@@ -38,7 +38,7 @@
 
 
 ############
-## lambda ##
+## lambda ## - функция без имени, используется там где необходимо выполнить небольшие задачи и при этом не создавать отдельную функцию
 ############
 
 # # переписываем верхние функции по новому синтаксису
@@ -58,7 +58,7 @@
 #####################################################
 
 ########################
-## List Comprehension ##
+## List Comprehension ## - получение новых коллекций
 ########################
 
 # list = [] # было
@@ -122,12 +122,74 @@
 # print(out)
 
 
-def select(f, col): # стало
-    return [f(x) for x in col]
-def where(f, col):
-    return [x for x in col if f(x)]
-data = '1 2 3 5 8 15 23 38'.split()
-data = select(int, data)
-data = where(lambda e: not e % 2, data)
-data = list(select(lambda e: (e, e**2), data))
- 
+# def select(f, col): # стало
+#     return [f(x) for x in col]
+# def where(f, col):
+#     return [x for x in col if f(x)]
+# data = '1 2 3 5 8 15 23 38'.split()
+# data = select(int, data)
+# data = where(lambda e: not e % 2, data)
+# data = list(select(lambda e: (e, e**2), data))
+
+#########
+## Map ## - функция применяемая к каждому элементу
+#########
+
+
+# li = [x for x in range(1, 20)]
+# li = list(map(lambda x: x + 10, li))
+# print(li)
+#####################################################
+
+
+# def where(f, col):
+#     return [x for x in col if f(x)]
+
+# data = '1 2 3 5 8 15 23 38'.split()
+
+# res = map(int, data)
+# res = where(lambda x: not x % 2, res)
+# res = list(map(lambda x: (x, x**2), res))
+# print(res)
+#####################################################
+
+
+############
+## Filter ##
+############
+
+
+# data = [x for x in range(10)]
+# res = list(filter(lambda x: not x % 2, data))
+# print(res)
+#####################################################
+
+
+# data = '1 2 3 5 8 15 23 38'.split()
+
+# res = map(int, data)
+# res = filter(lambda x: not x % 2, res)
+# res = list(map(lambda x: (x, x**2), res))
+# print(res)
+#####################################################
+
+
+#########
+## Zip ## - формирует пары из элементов
+#########
+
+
+users = ['user1', 'user2', 'user3', 'user4', 'user5']
+ids = [4, 5, 9, 14, 7]
+data = list(zip(users, ids))
+print(data)
+
+
+###############
+## Enumerata ## - нумерует обьекты индексами
+###############
+
+
+users = ['user1', 'user2', 'user3', 'user4', 'user5']
+data = list(enumerate(users))
+print(data)
